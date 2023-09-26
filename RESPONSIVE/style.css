@@ -1,0 +1,85 @@
+*{ box-sizing: border-box;}
+html{
+    scroll-behavior: smooth;
+}
+/* -------- NAVIGATION TABS -------*/
+.navTab{
+    background-color: brown;
+    position: fixed;
+    top: 0%;
+    bottom: 0%;
+    right: 0%;
+}
+.links{
+    display: inline-block;
+    padding: 1em 2em;
+    color:black
+}
+.links:hover{
+    color: bisque;
+    background-color: orange;
+    font-weight: bolder;
+}
+/* ------- INTRO IMAGE ------*/
+.intro{
+    box-shadow: 2px 2px 5px gray;
+    margin-top: 7em;
+    border-radius: 1em;
+    overflow: hidden;
+    position: relative;
+    width: 50%;
+}
+img{
+    width: 100%;
+    display: block;
+}
+.intro_pg{
+    position: absolute;
+    top: 0%;
+    left: 10%;
+    right: 10%;
+    text-align: center;
+    font-size: 2.5em;
+    color: orangered;
+    font-weight: 900;
+    font-family: "arial black";
+}
+/*----------CARDS------*/
+.container{
+    display: flex;
+}
+.card{
+    width: 30%;
+    box-shadow: 2px 2px 5px gray;
+    border-radius: 0.5em;
+    overflow: hidden;
+    margin: 2%;
+    position: relative;
+    display: flex;
+}
+.cardTitle{
+    padding: 0.5em 1em;
+    color: orangered;
+}
+.cardIntro{
+    padding: 0.5em 1em;
+    color: rgb(100, 100,100);
+    margin-bottom: 5em;
+}
+.cardLink{
+    position: absolute;
+    bottom: 0%;
+    background-color: orangered;
+    color: orange;
+    display: inline-block;
+    left: 0%;
+    right: 0%;
+    padding: 1em;
+    text-align: center;
+}
+.cardLink:hover{
+    background-color: whitesmoke;
+    color: orangered;
+    text-decoration: none;
+    font-weight: bolder;
+}
