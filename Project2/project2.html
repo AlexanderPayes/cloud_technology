@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+   
+
+
+
+
+
+
+<!--NAVBAR-->
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand  m-5" href="#">Shoes galore!</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+          </ul>
+          <span class="navbar-text">
+            <nav class="navbar navbar-light bg-light  m-5">
+                <form class="form-inline">
+                  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+              </nav>
+          </span>
+        </div>
+      </nav>
+
+      <!--NAVBAR-->
+
+
+
+
+      <!---Carousel-->
+      <section class="carousel slide" data-bs-ride="carousel" style= "  width: 60%;  margin: auto;" id="slideshow" >
+        <div class="carousel-inner"  >
+            <div class="carousel-item active"><img src="images/blank.webp"  width="100%"><h2 class="carousel-caption">Plain White room</h2></div>
+            <div class="carousel-item"><img src="images/brick wall.jpeg" width="100%"><h2 class="carousel-caption">Plain Brick room</h2> </div>  
+            <div class="carousel-item"><img src="images/brown wall2.jpeg" width="100%"><h2 class="carousel-caption">Plain Brown room</h2></div>
+            <div class="carousel-item"><img src="images/bed.jpeg" width="100%"><h2 class="carousel-caption">Plain Bedroom</h2></div>
+            <div class="carousel-item"><img src="images/colorful wall.webp" width="100%"><h2 class="carousel-caption">Plain Blue room</h2></div>
+        </div>
+        <!--LEFT AND RIGHT CONTROLS-->
+        <button class="carousel-control-prev" type="button" data-bs-slide="prev" data-bs-target="#slideshow">
+            <span class="carousel-control-prev-icon" style="background-color: brown;" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-slide="next" data-bs-target="#slideshow">
+            <span class="carousel-control-next-icon" style="background-color: brown;" aria-hidden="true"></span>
+        </button>
+        
+
+  <!--Indicators-->
+    
+        <div  class="carousel-indicators" >
+            <button  type="button"  data-bs-target="#slideshow" data-bs-slide-to="0" class="active"   aria-current="true" aria-label="Slide 1"></button>
+            <button  type="button"  data-bs-target="#slideshow" data-bs-slide-to="1" aria-label="Slide 2" ></button> 
+            <button  type="button"  data-bs-target="#slideshow" data-bs-slide-to="2"  aria-label="Slide 3" ></button> 
+            <button  type="button"  data-bs-target="#slideshow" data-bs-slide-to="3"  aria-label="Slide 4" ></button> 
+            <button  type="button"  data-bs-target="#slideshow" data-bs-slide-to="4"  aria-label="Slide 5" ></button> 
+          </div>
+        </section> 
+  <!---Carousel-->
+
+
+
+ <!---Base images-->
+    <div class="container-fluid">
+        <div class="row">
+            <section class="card col-lg-2 m-4  col-sm-10 p-2 bg-info ">
+                <img src="images/shoe 1.jpg" class="card-img-top" width="100%" style="height: 60%;">
+                <div class="body">
+                    <h2 class="card-title">All around shoe</h2>
+                    <p class="card-subtitle"> <i class="text-muted">Model 15k29</i> </p>
+                    <p class="card-text mt-3">This shoe is made for everything. You cant go wrong with this shoe especially at its value.</p>
+                    <button type="button " class="btn btn-danger m-3 " data-bs-target="#modal2"
+                        data-bs-toggle="modal">Add to cart</button>
+
+                </div>
+            </section>
+
+            <section class="card col-lg-2 m-4  col-sm-10 p-2 bg-info ">
+                <img src="images/shoe 2.webp" class="card-img-top" width="100%" style="height: 60%;">
+                <div class="body">
+                    <h2 class="card-title">Sport shoe</h2>
+                    <p class="card-subtitle"> <i class="text-muted">Model 58306</i> </p>
+                    <p class="card-text mt-3">This shoe is exteremly comfortable. Made for playing sports like basketball. Easy to move in.</p>
+
+                    <button type="button " class="btn btn-danger m-3 " data-bs-target="#modal3"
+                        data-bs-toggle="modal">Add to cart</button>
+
+                </div>
+            </section>
+            <section class="card col-lg-2 m-4  col-sm-10 p-2 bg-info ">
+                <img src="images/shoe 3.webp" class="card-img-top" width="100%" style="height: 60%;">
+                <div class="body">
+                    <h2 class="card-title">Everyday </h2>
+                    <p class="card-subtitle"> <i class="text-muted">Model 489fg</i> </p>
+                    <p class="card-text mt-3">This shoe is exteremly comfortable. Made fopr wear and tear.</p>
+
+                    <button type="button " class="btn btn-danger m-3 " data-bs-target="#modal4"
+                        data-bs-toggle="modal">Add to cart</button>
+
+                </div>
+            </section>
+            <section class="card col-lg-2 m-4  col-sm-10 p-2 bg-info ">
+                <img src="images/shoe 4.jpeg" class="card-img-top" width="100%" style="height: 60%;">
+                <div class="body">
+                    <h2 class="card-title">Dress shoe</h2>
+                    <p class="card-subtitle"> <i class="text-muted">Model 496j4</i> </p>
+                    <p class="card-text mt-3">Tjhis shoe is made for dress and fancy occasions.</p>
+
+                    <button type="button " class="btn btn-danger m-3 " data-bs-target="#modal5"
+                        data-bs-toggle="modal">Add to cart</button>
+                     </div>
+            </section>
+
+
+            <section class="card col-lg-2 m-4  col-sm-10 p-2 bg-info ">
+                <img src="images/shoe 6.jpeg" class="card-img-top" width="100%" style="height: 60%;">
+                <div class="body">
+                    <h2 class="card-title">Dress shoe</h2>
+                    <p class="card-subtitle"> <i class="text-muted">Model 496j4</i> </p>
+                    <p class="card-text mt-3">Tjhis shoe is made for dress and fancy occasions.</p>
+
+                    <button type="button " class="btn btn-danger m-3 " data-bs-target="#modal6"
+                        data-bs-toggle="modal">Add to cart</button>
+                    </div>
+                </section>
+
+
+
+                <section class="card col-lg-2 m-4  col-sm-10 p-2 bg-info ">
+                    <img src="images/shoe 6.jpeg" class="card-img-top" width="100%" style="height: 60%;">
+                    <div class="body">
+                        <h2 class="card-title">Dress shoe</h2>
+                        <p class="card-subtitle"> <i class="text-muted">Model 496j4</i> </p>
+                        <p class="card-text mt-3">Tjhis shoe is made for dress and fancy occasions.</p>
+    
+                        <button type="button " class="btn btn-danger m-3 " data-bs-target="#modal6"
+                            data-bs-toggle="modal">Add to cart</button>
+                        </div>
+                    </section>
+
+
+                    <section class="card col-lg-2 m-4  col-sm-10 p-2 bg-info ">
+                        <img src="images/shoe 6.jpeg" class="card-img-top" width="100%" style="height: 60%;">
+                        <div class="body">
+                            <h2 class="card-title">Dress shoe</h2>
+                            <p class="card-subtitle"> <i class="text-muted">Model 496j4</i> </p>
+                            <p class="card-text mt-3">Tjhis shoe is made for dress and fancy occasions.</p>
+        
+                            <button type="button " class="btn btn-danger m-3 " data-bs-target="#modal6"
+                                data-bs-toggle="modal">Add to cart</button>
+                            </div>
+                        </section>
+
+
+                        <section class="card col-lg-2 m-4  col-sm-10 p-2 bg-info ">
+                            <img src="images/shoe 6.jpeg" class="card-img-top" width="100%" style="height: 60%;">
+                            <div class="body">
+                                <h2 class="card-title">Dress shoe</h2>
+                                <p class="card-subtitle"> <i class="text-muted">Model 496j4</i> </p>
+                                <p class="card-text mt-3">Tjhis shoe is made for dress and fancy occasions.</p>
+            
+                                <button type="button " class="btn btn-danger m-3 " data-bs-target="#modal6"
+                                    data-bs-toggle="modal">Add to cart</button>
+                                </div>
+                            </section>
+
+
+                            <section class="card col-lg-2 m-4  col-sm-10 p-2 bg-info ">
+                                <img src="images/shoe 6.jpeg" class="card-img-top" width="100%" style="height: 60%;">
+                                <div class="body">
+                                    <h2 class="card-title">Dress shoe</h2>
+                                    <p class="card-subtitle"> <i class="text-muted">Model 496j4</i> </p>
+                                    <p class="card-text mt-3">Tjhis shoe is made for dress and fancy occasions.</p>
+                
+                                    <button type="button " class="btn btn-danger m-3 " data-bs-target="#modal6"
+                                        data-bs-toggle="modal">Add to cart</button>
+                                    </div>
+                                </section>
+
+
+
+                                <section class="card col-lg-2 m-4  col-sm-10 p-2 bg-info ">
+                                    <img src="images/shoe 6.jpeg" class="card-img-top" width="100%" style="height: 60%;">
+                                    <div class="body">
+                                        <h2 class="card-title">Dress shoe</h2>
+                                        <p class="card-subtitle"> <i class="text-muted">Model 496j4</i> </p>
+                                        <p class="card-text mt-3">Tjhis shoe is made for dress and fancy occasions.</p>
+                    
+                                        <button type="button " class="btn btn-danger m-3 " data-bs-target="#modal6"
+                                            data-bs-toggle="modal">Add to cart</button>
+                                        </div>
+                                    </section>
+    </div>
+    </div>
+  <!---Base images-->
+
+
+
+    <!-- ALL MODAL WINDOWS-->
+
+
+    <!--- Modal Window 2 --->
+    <section id="modal2" class="modal fac" data-bs-backdrop="static" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <header class="modal-header">
+                    <h2 class="modal-title bg-danger" id="modal1Label">All around shoe</h2>
+                    <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close" S></button>
+                </header>
+                <main class="modal-body">
+                    <em><strong>Model 15k29</strong></em>
+                    <figure>
+                        <img src="images/shoe 1.jpg" width="45%" class="rounded m-1">
+                        <figcaption>$70.00 </figcaption>
+                    </figure>
+                    <footer class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </footer>
+                </main>
+            </div>
+        </div>
+    </section>
+
+     <!--- Modal Window 3 --->
+     <section id="modal3" class="modal fac" data-bs-backdrop="static" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <header class="modal-header">
+                    <h2 class="modal-title bg-danger" id="modal1Label">Sport shoe</h2>
+                    <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close" S></button>
+                </header>
+                <main class="modal-body">
+                    <em><strong>Model 58306</strong></em>
+                    <figure>
+                        <img src="images/shoe 2.webp" width="45%" class="rounded m-1">
+                        <figcaption>$100.00 </figcaption>
+                    </figure>
+                    <footer class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </footer>
+                </main>
+            </div>
+        </div>
+    </section>
+
+     <!--- Modal Window 4 --->
+     <section id="modal4" class="modal fac" data-bs-backdrop="static" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <header class="modal-header">
+                    <h2 class="modal-title bg-danger" id="modal1Label">Everyday Shoe</h2>
+                    <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close" S></button>
+                </header>
+                <main class="modal-body">
+                    <em><strong>Model 489fg</strong></em>
+                    <figure>
+                        <img src="images/shoe 3.webp" width="45%" class="rounded m-1">
+                        <figcaption>$40.00 </figcaption>
+                    </figure>
+                    <footer class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </footer>
+                </main>
+            </div>
+        </div>
+    </section>
+
+     <!--- Modal Window 5 --->
+     <section id="modal5" class="modal fac" data-bs-backdrop="static" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <header class="modal-header">
+                    <h2 class="modal-title bg-danger" id="modal1Label">Dress shoe</h2>
+                    <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close" S></button>
+                </header>
+                <main class="modal-body">
+                    <em><strong>Model 496j4e</strong></em>
+                    <figure>
+                        <img src="images/shoe 4.jpeg" width="45%" class="rounded m-1">
+                        <figcaption>$90.00 </figcaption>
+                    </figure>
+                    <footer class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </footer>
+                </main>
+            </div>
+        </div>
+    </section>
+
+
+    <!--- Modal Window 6 --->
+    <section id="modal6" class="modal fac" data-bs-backdrop="static" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <header class="modal-header">
+                    <h2 class="modal-title bg-danger" id="modal1Label">Dress shoe</h2>
+                    <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close" S></button>
+                </header>
+                <main class="modal-body">
+                    <em><strong>Model 496j4e</strong></em>
+                    <figure>
+                        <img src="images/shoe 8.jpeg" width="45%" class="rounded m-1">
+                        <figcaption>$90.00 </figcaption>
+                    </figure>
+                    <footer class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </footer>
+                </main>
+            </div>
+        </div>
+    </section>
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
